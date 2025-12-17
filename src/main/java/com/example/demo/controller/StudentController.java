@@ -1,4 +1,4 @@
-package com.example.demo.controller;
+package com.example.demo.c ontroller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.blind.annotation.RestController;
