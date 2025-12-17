@@ -55,7 +55,7 @@ public void setCreated(Date created){
     this.created=created;
 }
 // constructer
-public StudentEntity(String name,Integer id,String email,String password,Date created){
+public Studententity(String name,Integer id,String email,String password,Date created){
     this.name=name;
     this.id=id;
     this.email=email;
@@ -63,7 +63,7 @@ public StudentEntity(String name,Integer id,String email,String password,Date cr
     this.created=created;
 }
 // Default constructor
-public StudentEntity(){
+public Studententity(){
 
  }
 }
