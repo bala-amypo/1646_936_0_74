@@ -9,7 +9,7 @@ import jakarta.persistence.GenerationType;
 
 @Entity
 // Data
-public class StudentEntity{
+public class Studententity{
     @Id
     @GeneratedValue(strategy=GenerationType.IDENTITY)
     private Integer id;
