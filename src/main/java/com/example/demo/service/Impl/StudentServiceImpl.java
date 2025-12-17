@@ -8,7 +8,9 @@ public class StudentServiceImpl implements StudentService{
     // save()
     // finalAll()
     // findById()
+    // deleteById()
+    // existsById()
     public Studententity postData(Studententity stu){
-       return 
+       return student.save(stu);
     }
 }
