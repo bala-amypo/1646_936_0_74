@@ -30,7 +30,9 @@ public class StudentServiceImpl implements StudentService{
     @Override
     public Studententity getData(int id){
         return student.findById(id);
-        
+
     }
+    @Override
+    public Studententity updateData()
 
 }
