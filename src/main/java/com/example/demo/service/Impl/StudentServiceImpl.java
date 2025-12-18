@@ -24,7 +24,7 @@ public class StudentServiceImpl implements StudentService{
     @Override
     public String DeleteData(int id){
             student.deleteById(id);
-            return "Delete Successfully";
+            return "Delete Successfully";            
     
     }
     @Override
