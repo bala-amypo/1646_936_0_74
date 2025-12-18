@@ -27,6 +27,7 @@ public class StudentController{
         return ser.DeleteData(id);
     }
     @GetMapping("/getid/{id}")
-    public Studententity
+    public Studententity getData(id){
+    return service.getData(id);
+   }
 }
-
