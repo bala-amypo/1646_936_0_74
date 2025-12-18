@@ -29,7 +29,7 @@ public class StudentServiceImpl implements StudentService{
     }
     @Override
     public Studententity getData(int id){
-        return student.findById()
+        return student.findById(id);
     }
 
 }
