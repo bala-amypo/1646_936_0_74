@@ -30,4 +30,6 @@ public class StudentController{
     public Studententity getData(id){
     return service.getData(id);
    }
+   @PutMapping("/put/{id}")
+   
 }
