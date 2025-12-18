@@ -27,9 +27,11 @@ public class StudentController{
         return ser.DeleteData(id);
     }
     @GetMapping("/getid/{id}")
-    public Studententity getData(id){
+    public Studententity getData(int id){
     return service.getData(id);
    }
    @PutMapping("/put/{id}")
-   
+   public Studententity putval(@PathVariable int id,@RequestBody StudentEntity entity){
+    return service.updateData(id,entity);
+   }
 }
