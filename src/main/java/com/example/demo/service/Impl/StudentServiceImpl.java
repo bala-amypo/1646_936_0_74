@@ -14,8 +14,8 @@ public class StudentServiceImpl implements StudentService{
     @Autowired Studentrepository student;
     // save,findAll(),findById(),deleteId(),existsById()
     @Override
-    public Studententity postdata(Studententity stu){
-        return student.save(stu);
+    public Studententity postdata(Studententity entity){
+        return student.save(entity);
     }
     @Override
     public List<Studententity>getAllData(){
