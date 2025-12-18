@@ -19,6 +19,44 @@ public class ValidationEntity{
     @Positive(message = "Age must be a positive number")
     private Integer age;
     
+ //Name
+    public String getName(){
+        return username;
+    }
+    public void setName(String username){
+        this.username=username;
+    }
 
-    
+    //Id -primary key
+    public Long getID(){
+        return id;
+    }
+    public void setID(Long id){
+        this.id=id;
+    }
+
+    //Email
+    public String getEmail(){
+        return email;
+    }
+    public void setEmail(String email){
+        this.email=email;
+    }
+
+    // Password
+    public String getPassword(){
+        return password;
+    }
+    public void setPassword(String password){
+        this.password=password;
+    }
+
+    // Created
+    public Date getCreated(){
+        return created;
+    }
+    public void setAge(int Age){
+        this.age=age;
+    }
+
 }
