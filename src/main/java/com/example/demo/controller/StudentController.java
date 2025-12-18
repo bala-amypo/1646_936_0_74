@@ -16,6 +16,8 @@ public class StudentController{
             return ser.postdata(entity);
     }
     @GetMapping("/Get")
-    
+    public List<Studententity>getval(){
+        return service.getAllData();
+    }
 }
 
