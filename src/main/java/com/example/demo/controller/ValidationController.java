@@ -16,3 +16,4 @@ public class ValidationController{
         return serve.post(stu);
     }
 }
+                                               
