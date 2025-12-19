@@ -2,7 +2,7 @@ package com.example.demo.service.impl;
 import org.springframework.stereotype.Service;
 import org.springframework.beans.factory.annotation.Autowired;
 import com.example.demo.repository.TimeStampRepository;
-import com.example.demo.entity.TimeStamp;
+import com.example.demo.entity.TimeStampEntity;
 import com.example.demo.service.TimeStampService;
 
 @Service
