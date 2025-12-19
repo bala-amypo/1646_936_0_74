@@ -10,7 +10,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 public class TimeStampController{
 @Autowired TimeStampService val;
 @PostMapping("/post3")
-    public TimeStamp sendData(@RequestBody TimeStamp value){
+    public TimeStampEntity sendData(@RequestBody TimeStampEntity value){
             return val.postdata(value);
 }
 
