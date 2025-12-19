@@ -1,18 +1,20 @@
 package com.example.demo.service.impl;
-
-import com.example.demo.entity.TimeStampEntity;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.beans.factory.annotation.Autowired;
 import com.example.demo.repository.TimeStampRepository;
-import java.util.List;
-@Service
-public class TimeStampServiceImpl implements TimeStampService{
+import com.example.demo.entity.TimeStamp;
+import com.example.demo.service.TimeStampService;
 
-     @Autowired TimeStampRepository repo;
+@Service
+public class TimeStampImpl implements TimeStampService{
+
+@Autowired TimeStampRepository stamp;
+
+@Override
+    public TimeStamp postdata(TimeStamp val){
         
-    @Override
-    TimeStampEntity postStamp(TimeStampEntity time){
-        return repo.save(time);
+        return stamp.save(val);
+
     }
-   
+
 }
