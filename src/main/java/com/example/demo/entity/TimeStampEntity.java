@@ -8,13 +8,11 @@ import jakarta.persistence.Id;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import java.time.LocalDateTime;
-
 @Entity
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
 public class TimeStampEntity{
-
 @Id
 @GeneratedValue(strategy=GenerationType.IDENTITY)
 private Long id;
@@ -30,6 +28,6 @@ public void Oncreate(){
 }
 @PreUpdate
 public void Onupdate(){
-    this.updatat = now;
+    this.updatedat = now;
 }
 }
