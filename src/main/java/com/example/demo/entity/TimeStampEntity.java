@@ -23,11 +23,13 @@ private LocalDateTime UpdateAt;
 @PrePersists
 public void Oncreate(){
     LocalDateTime now = new LocalDateTime().now();
+    if(this.createdat==null){
     this.createdat = now;
+    }
     this.updatedat = now;
 }
 @PreUpdate
 public void Onupdate(){
-    this.updatedat = now; 
+    
 }
 }

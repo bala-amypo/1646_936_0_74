@@ -1,4 +1,5 @@
 package com.example.demo.entity;
+
 import lombok.data;
 import java.util .data;
 import jakarta.persistence.Entity;
