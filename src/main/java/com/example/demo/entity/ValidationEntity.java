@@ -33,6 +33,4 @@ public class ValidationEntity{
     private String password;
     @Max(30)@Positive(message="Age must be a Positive number")
     private Integer age;
-
-
 }
