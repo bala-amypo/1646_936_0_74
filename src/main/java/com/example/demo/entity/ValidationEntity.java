@@ -17,7 +17,7 @@ import lombok.Data;
 @Data
 @Getter
 @Setter
-@ AllArgsConstructor
+@AllArgsConstructor
 @NoArgsConstructor
 public class ValidationEntity{
     @Id
