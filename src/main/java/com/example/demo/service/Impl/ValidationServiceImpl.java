@@ -9,9 +9,12 @@ import org.springframework.beans.factory.annotation.Autowired;
 @Service
 public class ValidationServiceImpl implements ValidationService{
      @Autowired ValidationRepository student;
-     
           @Override
           public ValidationEntity post(ValidationEntity stu){
                return student.save(stu);
+          }
+          @Override
+          public ValidationEntity getStudentById(int id){
+               return student.findById(id);
           }
 }
