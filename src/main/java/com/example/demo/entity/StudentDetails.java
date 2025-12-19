@@ -1,4 +1,5 @@
 package com.example.demo.entity;
+
 import java.util .data;
 import jakarta.persistence.Entity;
 import lombok.AllArgsConstructor;
@@ -14,7 +15,9 @@ public class StudentDetails{
 @Id
 @GeneratedValue(strategy=GenerationType.IDENTITY)
 private integer id;
-private integer id;
+private int  cardnumber;
 
-@
+@OneToOne
+@JoinColumn("student_id")
+private studetails student;
 }
