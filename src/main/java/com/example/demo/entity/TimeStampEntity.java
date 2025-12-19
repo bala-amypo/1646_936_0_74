@@ -28,6 +28,6 @@ public void Oncreate(){
 }
 @PreUpdate
 public void Onupdate(){
-    this.updatedat = now;
+    this.updatedat = now; 
 }
 }
