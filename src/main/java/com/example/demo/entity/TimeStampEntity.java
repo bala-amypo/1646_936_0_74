@@ -1,19 +1,26 @@
 package com.example.demo.entity;
-import jakarta.persistence.*;
+
+import jakarta.persistence.Entity;
+import lombok.AllArgsConstructor;
+import lombok.NoArgsConstructor;
 import lombok.Data;
+import jakarta.persistence.Id;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
 import java.time.LocalDateTime;
 
 @Entity
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
+public class TimeStamp{
 
-public class TimeStampEntity{
-    @Id
-    @GeneratedValue(strategy=GenerationType.IDENTITY)
-     private Long id;
-     private String name;
-     private String email;
-     private LocalDateTime createAt;
-     private LocalDateTime updateAt;
+@Id
+@GeneratedValue(strategy=GenerationType.IDENTITY)
+private Long id;
+private String name;
+private String email;
+private LocalDateTime createdAt;
+private LocalDateTime UpdateAt;
+
 }
