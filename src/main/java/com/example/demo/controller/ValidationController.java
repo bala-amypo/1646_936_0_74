@@ -15,5 +15,6 @@ public class ValidationController{
     public ValidationEntity sendData(@Valid @RequestBody ValidationEntity stu){
         return serve.post(stu);
     }
+    @Auto
 }
                                                
