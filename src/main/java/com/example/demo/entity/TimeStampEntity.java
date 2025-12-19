@@ -22,5 +22,10 @@ private String name;
 private String email;
 private LocalDateTime createdAt;
 private LocalDateTime UpdateAt;
-
+@PrePersists
+public void Oncreate(){
+    LocalDateTime now = new LocalDateTime().now();
+    this.createdat = now;
+    this.updatedat = now;
+}
 }
