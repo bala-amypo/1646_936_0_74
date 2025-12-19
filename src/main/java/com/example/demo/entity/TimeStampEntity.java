@@ -30,6 +30,7 @@ public void Oncreate(){
 }
 @PreUpdate
 public void Onupdate(){
-    
+    LocalDateTime now=LocalDateTime.now();
+    this.updatedat=now;
 }
 }
